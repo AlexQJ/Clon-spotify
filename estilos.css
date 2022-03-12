@@ -128,6 +128,10 @@ main .contenedor button {
     cursor: pointer;
 }
 
+main .contenedor button a {
+    color: #2941ab;
+}
+
 main .contenedor button:hover {
     transform: scale(1.07);
     -webkit-transform: scale(1.07);
