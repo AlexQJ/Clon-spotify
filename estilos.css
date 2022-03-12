@@ -1,0 +1,409 @@
+:root {
+    --verde: #1ed760;
+    --azul: #2941ab;
+    --gris: #919496;
+    --gris_oscuro: #222326;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    font-family: 'Montserrat', Helvetica, sans-serif;
+}
+
+/* --- --- --- HEADER --- --- --- */
+nav.menu-superior {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color:#000;
+    color: #fff;
+    font-weight: bold;
+    height: 80px;
+    font-size: 14px;
+}
+
+nav.menu-superior a {
+    color: #fff;
+}
+
+nav.menu-superior a:hover {
+    color: var(--verde);
+}
+nav.menu-superior .logo {
+    width: 135px;
+    color: white;
+    display: inline-block;
+    margin-left: 100px;
+    margin-top: 5px;
+    cursor: pointer;
+}
+
+nav.menu-superior .hamburguesa {
+    display: none;
+}
+nav.menu-superior path,
+nav.menu-inferior path {
+    fill: white;
+}
+
+nav.menu-superior path:hover,
+nav.menu-inferior path:hover {
+    fill: var(--verde);
+}
+nav.menu-superior ul {
+    margin-right: 100px;
+}
+nav.menu-superior ul li {
+    display: inline-block;
+    padding: 28px 17px;
+    cursor: pointer;
+}
+nav.menu-superior ul li:hover {
+    color: var(--verde);
+}
+nav.menu-superior ul li.separador:hover {
+    color: #fff;
+    cursor:default;
+}
+
+/* --- --- --- MAIN --- --- --- */
+
+main .contenedor {
+    width: 100%;
+    background-color: var(--azul);
+    height: 50vw;
+    background-image: url("https://www-growth.scdn.co/static/home/bursts-tablet.svg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: right 40% center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main .contenedor .contenedor-texto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+main .contenedor .titulo{
+    font-size: 130px;
+    line-height: 180px;
+    width: 600px;
+    color: var(--verde);
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+main .contenedor p {
+    font-size: 18px;
+    color: var(--verde);
+    font-weight: 500;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+main .contenedor button {
+    border: none;
+    text-transform: uppercase;
+    border-radius: 50px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
+    background-color: var(--verde);
+    color: var(--azul);
+    font-weight: 800;
+    padding:15px 35px;
+    margin-bottom: 20px;
+    position: relative;
+    cursor: pointer;
+}
+
+main .contenedor button:hover {
+    transform: scale(1.07);
+    -webkit-transform: scale(1.07);
+    -moz-transform: scale(1.07);
+    -ms-transform: scale(1.07);
+    -o-transform: scale(1.07);
+}
+
+/* --- --- --- FOOTER --- --- --- */
+footer a,
+footer span {
+    color: #fff;
+}
+
+
+
+footer a:hover {
+    color: var(--verde);
+}
+
+footer nav.menu-inferior {
+    background: #000;
+}
+
+footer nav.menu-inferior .contenedor-superior {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    padding-top: 50px;
+}
+
+footer nav.menu-inferior .contenedor-superior .logo {
+    width: 135px;
+}
+
+footer nav.menu-inferior .contenedor-superior .contenedor-listas {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+}
+
+footer nav.menu-inferior .contenedor-superior .contenedor-listas .lista {
+    font-size: 14px;
+    margin-right: 40px;
+}
+
+footer nav.menu-inferior .contenedor-superior .contenedor-listas dt {
+    color: var(--gris);
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+footer nav.menu-inferior .contenedor-superior .contenedor-listas dd {
+    margin-bottom: 20px;
+}
+
+footer nav.menu-inferior .contenedor-superior ul li {
+    display: inline-block;
+    text-align: center;
+}
+
+footer nav.menu-inferior .contenedor-superior .redes-sociales .red {
+    font-size: 24px;
+    margin: 0 8px;
+
+}
+
+footer nav.menu-inferior .contenedor-superior .redes-sociales .red:hover {
+    color: var(--verde);
+}
+
+
+footer nav.menu-inferior .contenedor-superior .redes-sociales i{
+    text-align: center;
+    padding: 15px;
+    width: 55px;
+    background-color: var(--gris_oscuro);
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+footer nav.menu-inferior .contenedor-inferior {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    padding: 100px 50px;
+}
+
+footer nav.menu-inferior .contenedor-inferior .links-inferiores ul li {
+    display: inline-block;
+    font-size: 14px;
+    margin-right: 20px;
+}
+
+footer nav.menu-inferior span,
+footer nav.menu-inferior .region {
+    text-align: right;
+    color: var(--gris);
+    font-size: 14px;
+}
+
+
+footer nav div.contenedor-inferior div.region a,
+footer nav div.contenedor-inferior div.region a svg path {
+    color: var(--gris);
+    fill: var(--gris);
+    font-size: 14px;
+}
+
+footer nav.menu-inferior .contenedor-inferior .links-inferiores a{
+    color: var(--gris);
+}
+
+footer nav.menu-inferior .contenedor-inferior .links-inferiores a:hover{
+    color: var(--verde);
+}
+
+footer nav.menu-inferior .region a:hover {
+    color: var(--verde);
+}
+
+
+
+
+
+
+
+
+
+/* --- --- --- Media Queries --- --- --- */
+
+/* Tablet */
+@media (max-width: 991px){
+
+    /* header */
+    nav.menu-superior .enlaces {
+        display: none;
+    }
+
+    nav.menu-superior .logo {
+        margin-left: 20px;
+    }
+    nav.menu-superior .hamburguesa {
+        display: block;
+        color: #fff;
+        margin-right: 20px;
+        font-size: 30px;
+        cursor: pointer;
+    }
+
+    nav.menu-superior .hamburguesa:hover {
+        color: var(--verde);
+    }
+
+    /* main */
+
+    main .contenedor .contenedor-texto .titulo {
+        font-size: 80px;
+        line-height: 80px;
+    }
+
+    /* Footer */
+
+    footer nav.menu-inferior .contenedor-superior {
+        flex-wrap: wrap;
+        justify-content: flex-start;
+    }
+
+    footer nav.menu-inferior .contenedor-superior .logo {
+        width: 100px;
+        margin: 30px 50px 30px 10px;
+    }
+
+    footer nav.menu-inferior .contenedor-superior .contenedor-listas {
+        flex-wrap: wrap;
+        text-align: left;
+        justify-content: flex-start;
+        margin-right: 50px;
+    }
+
+    footer nav.menu-inferior .contenedor-superior .contenedor-listas .lista {
+        margin-right: 200px;
+        margin-left: 25px;
+        margin-bottom: 30px;
+    }
+
+    footer nav.menu-inferior .contenedor-superior .redes-sociales{
+        margin: 30px 0;
+        transform: scale(.8);
+        -webkit-transform: scale(.8);
+        -moz-transform: scale(.8);
+        -ms-transform: scale(.8);
+        -o-transform: scale(.8);
+    }
+
+    footer nav.menu-inferior .contenedor-inferior {
+        padding: 0 0 20px 0;
+
+    }
+
+    footer nav.menu-inferior .contenedor-inferior .region a,
+    footer nav.menu-inferior .contenedor-inferior .region span{
+        margin-right: 20px;
+        font-size: 10px;
+    }
+
+    footer nav.menu-inferior .contenedor-inferior .links-inferiores {
+        margin: 10px 20px;
+    }
+    footer nav.menu-inferior .contenedor-inferior .links-inferiores a {
+        font-size: 10px;
+        margin: 0;
+    }
+
+
+
+
+
+
+
+
+    /* Movil */
+
+    /* Header movil */
+    @media (max-width: 500px){
+        nav.menu-superior .logo {
+            margin-left: 10px;
+            width: 25%;
+        }
+        nav.menu-superior .hamburguesa {
+            display: block;
+            color: #fff;
+            right: 0;
+            font-size: 18px;
+        }
+
+        /* Main movil */
+        
+        main .contenedor {
+            height: 120vw;
+            background-size: 190%;
+        }
+
+        main .contenedor .titulo {
+            width: 75%;
+            margin-top: 10%;
+        }
+
+        main .contenedor p {
+            width: 75%;
+            margin: 10% auto;
+        }
+
+        main .contenedor button {
+            margin-bottom: 10%;
+        }
+
+
+        /* footer */
+
+        footer nav.menu-inferior .contenedor-inferior {
+            margin: 0;
+            padding: 0;
+        }
+
+        footer nav.menu-inferior .contenedor-inferior .region a,
+        footer nav.menu-inferior .contenedor-inferior .region span{
+            margin: 0;
+            padding: 0;
+    }
+
+    }
+
+
+}
